@@ -1,0 +1,12 @@
+
+/* 
+  localizable.strings
+  CoolBlue3DExample
+
+  Created by Bruno Pantaleão N. Gonçalves on 03/06/18.
+  Copyright © 2018 Bruno Pantaleão. All rights reserved.
+*/
+
+"errorHeader" = "Oops...";
+"errorBody" = "Er is iets mis gegaan, probeer het alstublieft nogmaals";
+"errorButton" = "Ok";

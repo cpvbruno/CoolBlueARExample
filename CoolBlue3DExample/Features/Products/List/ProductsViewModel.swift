@@ -16,28 +16,21 @@ class ProductsViewModel: NSObject {
     
     func getProducts() {
         viewController.showLoader()
-        ProductsServices.getProducts(completion: { (result) in
-            if result["failed"] == nil {
-                var products = [Product]()
-                if let items = result["items"] as? [AnyObject] {
-                    for item in items {
-                        var product = Product()
-                        product.name = item["name"] as? String ?? ""
-                        product.description = item["description"] as? String ?? ""
-                        product.image = item["image"] as? String ?? ""
-                        product.price = item["price"] as? String ?? ""
-                        products.append(product)
-                    }
-                }
+        ProductsServices.getProducts(completion: { (success, products) in
+            if success, let products = products {
                 self.viewController.products = products
-                DispatchQueue.main.async {
-                     self.viewController.tableView.reloadData()
-                    self.viewController.hideLoader()
-                }
+                self.reloadList()
             } else {
+                self.viewController.hideLoader()
                 self.viewController.showError()
             }
         })
     }
     
+    func reloadList() {
+        DispatchQueue.main.async {
+            self.viewController.tableView.reloadData()
+            self.viewController.hideLoader()
+        }
+    }
 }

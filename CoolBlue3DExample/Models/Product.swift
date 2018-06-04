@@ -9,8 +9,8 @@
 import Foundation
 
 struct Product {
-    var name = ""
-    var description = ""
-    var image = ""
-    var price = ""
+    var name: String!
+    var description: String!
+    var image: String!
+    var price: String!
 }

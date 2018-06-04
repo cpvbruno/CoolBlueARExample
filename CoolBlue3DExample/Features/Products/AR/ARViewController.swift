@@ -14,7 +14,9 @@ class ARViewController: UIViewController {
     
     @IBOutlet weak var sceneView: ARSCNView!
     
-    var placed = false
+    private var placed = false
+    private let tvFileName = "tv.scn"
+    private let tvNodeName = "tv"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,7 +59,6 @@ class ARViewController: UIViewController {
     }
     
     @objc func addShipToSceneView(withGestureRecognizer recognizer: UIGestureRecognizer) {
-        print("Tapped")
         let tapLocation = recognizer.location(in: sceneView)
         let hitTestResults = sceneView.hitTest(tapLocation, types: .existingPlaneUsingExtent)
         
@@ -67,8 +68,8 @@ class ARViewController: UIViewController {
         let y = translation.y
         let z = translation.z
         
-        guard let tvScene = SCNScene(named: "tv.scn"),
-            let tvNode = tvScene.rootNode.childNode(withName: "tv", recursively: false)
+        guard let tvScene = SCNScene(named: tvFileName),
+            let tvNode = tvScene.rootNode.childNode(withName: tvNodeName, recursively: false)
             else { return }
         
         

@@ -1,0 +1,45 @@
+
+/* Class = "UIButton"; normalTitle = "Back to reality"; ObjectID = "0vt-nN-y5z"; */
+"0vt-nN-y5z.normalTitle" = "Back to reality";
+
+/* Class = "UILabel"; text = "Welcome"; ObjectID = "60G-pF-9xu"; */
+"60G-pF-9xu.text" = "Welcome";
+
+/* Class = "UILabel"; text = "Search for products"; ObjectID = "64J-Lf-el6"; */
+"64J-Lf-el6.text" = "Search for products";
+
+/* Class = "UILabel"; text = "The products you want, with the prices you love."; ObjectID = "7BM-ar-U35"; */
+"7BM-ar-U35.text" = "The products you want, with the prices you love.";
+
+/* Class = "UILabel"; text = "to"; ObjectID = "8CR-aW-OEe"; */
+"8CR-aW-OEe.text" = "to";
+
+/* Class = "UILabel"; text = "With AR technology you will be able to see how products will look like at your room."; ObjectID = "EC0-Lm-4sZ"; */
+"EC0-Lm-4sZ.text" = "With AR technology you will be able to see how products will look like at your room.";
+
+/* Class = "UILabel"; text = "Preview in your home"; ObjectID = "Ezm-nZ-pxU"; */
+"Ezm-nZ-pxU.text" = "Preview in your home";
+
+/* Class = "UILabel"; text = "CoolBlue AR"; ObjectID = "OoO-0z-WaN"; */
+"OoO-0z-WaN.text" = "CoolBlue AR";
+
+/* Class = "UILabel"; text = "Look around for a plane space,\nClick on the blue spot."; ObjectID = "Pwt-2n-6w9"; */
+"Pwt-2n-6w9.text" = "Look around for a plane space,\nClick on the blue spot.";
+
+/* Class = "UILabel"; text = "Product Name"; ObjectID = "Zz9-98-c1E"; */
+"Zz9-98-c1E.text" = "Product Name";
+
+/* Class = "UITabBarItem"; title = "Products"; ObjectID = "acW-dT-cKf"; */
+"acW-dT-cKf.title" = "Products";
+
+/* Class = "UIButton"; normalTitle = "Let's Go!"; ObjectID = "gwa-hw-omz"; */
+"gwa-hw-omz.normalTitle" = "Let's Go!";
+
+/* Class = "UILabel"; text = "This is a description. Lorem Ipsum "; ObjectID = "nLf-Lw-G2A"; */
+"nLf-Lw-G2A.text" = "This is a description. Lorem Ipsum ";
+
+/* Class = "UINavigationItem"; title = "Products"; ObjectID = "rEx-iz-tf0"; */
+"rEx-iz-tf0.title" = "Products";
+
+/* Class = "UILabel"; text = "U$ 199,00"; ObjectID = "ztM-lV-esV"; */
+"ztM-lV-esV.text" = "U$ 199,00";

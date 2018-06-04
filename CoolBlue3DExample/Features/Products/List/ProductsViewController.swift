@@ -11,8 +11,8 @@ import UIKit
 class ProductsViewController: BaseViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    
     @IBOutlet var viewModel: ProductsViewModel!
+    
     var products = [Product]()
     
     override func viewDidLoad() {
@@ -21,10 +21,14 @@ class ProductsViewController: BaseViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        self.viewModel.getProducts()
+        loadList()
     }
     
     @IBAction func refresh(_ sender: Any) {
+        loadList()
+    }
+    
+    private func loadList() {
         self.viewModel.getProducts()
     }
 }

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D0FB7D320C4B7B300C4A1D1 /* Server.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D0FB7D220C4B7B300C4A1D1 /* Server.plist */; };
+		9D0FB7D520C4BCC600C4A1D1 /* ConfigurationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0FB7D420C4BCC600C4A1D1 /* ConfigurationServices.swift */; };
+		9D0FB7DA20C4C82200C4A1D1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9D0FB7DC20C4C82200C4A1D1 /* Localizable.strings */; };
 		9D3D0FD420C249D900E7CFF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3D0FD320C249D900E7CFF6 /* AppDelegate.swift */; };
 		9D3D0FD620C249D900E7CFF6 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3D0FD520C249D900E7CFF6 /* ProductsViewController.swift */; };
 		9D3D0FDB20C249D900E7CFF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D3D0FD920C249D900E7CFF6 /* Main.storyboard */; };
@@ -50,6 +53,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9D0FB7D220C4B7B300C4A1D1 /* Server.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Server.plist; sourceTree = "<group>"; };
+		9D0FB7D420C4BCC600C4A1D1 /* ConfigurationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationServices.swift; sourceTree = "<group>"; };
+		9D0FB7DB20C4C82200C4A1D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9D0FB7DD20C4C84400C4A1D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9D0FB7DE20C4C8BA00C4A1D1 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Main.strings; sourceTree = "<group>"; };
+		9D0FB7DF20C4C8BA00C4A1D1 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		9D0FB7E020C4C8BA00C4A1D1 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9D3D0FD020C249D900E7CFF6 /* CoolBlue3DExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolBlue3DExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D3D0FD320C249D900E7CFF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D3D0FD520C249D900E7CFF6 /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
@@ -135,12 +145,12 @@
 				9D3D100620C24A1500E7CFF6 /* Models */,
 				9D3D100320C249F900E7CFF6 /* Services */,
 				9D3D100A20C24A6200E7CFF6 /* Features */,
-				9D3D0FD320C249D900E7CFF6 /* AppDelegate.swift */,
 				9D3D0FD920C249D900E7CFF6 /* Main.storyboard */,
-				9D3D0FDC20C249DA00E7CFF6 /* Assets.xcassets */,
 				9D3D0FDE20C249DA00E7CFF6 /* LaunchScreen.storyboard */,
+				9D3D0FD320C249D900E7CFF6 /* AppDelegate.swift */,
 				9D3D100520C24A0900E7CFF6 /* Extensions */,
 				9D3D100420C24A0400E7CFF6 /* Resources */,
+				9D3D0FDC20C249DA00E7CFF6 /* Assets.xcassets */,
 				9D3D0FE120C249DA00E7CFF6 /* Info.plist */,
 			);
 			path = CoolBlue3DExample;
@@ -169,6 +179,7 @@
 			children = (
 				9D3D103320C2845800E7CFF6 /* ProductsServices.swift */,
 				9D3D103520C2953F00E7CFF6 /* NetworkServices.swift */,
+				9D0FB7D420C4BCC600C4A1D1 /* ConfigurationServices.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -177,6 +188,8 @@
 			isa = PBXGroup;
 			children = (
 				9D3D102220C2670D00E7CFF6 /* AR */,
+				9D0FB7D220C4B7B300C4A1D1 /* Server.plist */,
+				9D0FB7DC20C4C82200C4A1D1 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -356,6 +369,7 @@
 			knownRegions = (
 				en,
 				Base,
+				nl,
 			);
 			mainGroup = 9D3D0FC720C249D900E7CFF6;
 			productRefGroup = 9D3D0FD120C249D900E7CFF6 /* Products */;
@@ -374,11 +388,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D0FB7DA20C4C82200C4A1D1 /* Localizable.strings in Resources */,
 				9D3D0FE020C249DA00E7CFF6 /* LaunchScreen.storyboard in Resources */,
 				9D3D102A20C2719400E7CFF6 /* tv.scn in Resources */,
 				9D3D103920C2965F00E7CFF6 /* Loader.xib in Resources */,
 				9D3D0FDD20C249DA00E7CFF6 /* Assets.xcassets in Resources */,
 				9D3D103020C278C700E7CFF6 /* Texture.JPG in Resources */,
+				9D0FB7D320C4B7B300C4A1D1 /* Server.plist in Resources */,
 				9D3D102E20C278AE00E7CFF6 /* LCD TV.obj in Resources */,
 				9D3D0FDB20C249D900E7CFF6 /* Main.storyboard in Resources */,
 			);
@@ -409,6 +425,7 @@
 				9D3D103620C2953F00E7CFF6 /* NetworkServices.swift in Sources */,
 				9D3D103220C27F7600E7CFF6 /* ProductsViewModel.swift in Sources */,
 				9D3D100F20C24B1600E7CFF6 /* UIColor.swift in Sources */,
+				9D0FB7D520C4BCC600C4A1D1 /* ConfigurationServices.swift in Sources */,
 				9D3D101C20C262FC00E7CFF6 /* ARViewController.swift in Sources */,
 				9D3D101E20C263E200E7CFF6 /* UIViewController.swift in Sources */,
 				9D3D100920C24A3700E7CFF6 /* BaseViewController.swift in Sources */,
@@ -453,10 +470,21 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		9D0FB7DC20C4C82200C4A1D1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D0FB7DB20C4C82200C4A1D1 /* en */,
+				9D0FB7DD20C4C84400C4A1D1 /* Base */,
+				9D0FB7E020C4C8BA00C4A1D1 /* nl */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		9D3D0FD920C249D900E7CFF6 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				9D3D0FDA20C249D900E7CFF6 /* Base */,
+				9D0FB7DE20C4C8BA00C4A1D1 /* nl */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -465,6 +493,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				9D3D0FDF20C249DA00E7CFF6 /* Base */,
+				9D0FB7DF20C4C8BA00C4A1D1 /* nl */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -476,6 +505,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -536,6 +566,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -601,7 +632,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.panta.CoolBlue3DExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -620,7 +651,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.panta.CoolBlue3DExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

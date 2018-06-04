@@ -27,7 +27,6 @@ class BaseViewController: UIViewController {
         navBar?.isTranslucent = false
         navBar?.tintColor = UIColor.white
         navBar?.prefersLargeTitles = true
-        
         navBar?.titleTextAttributes = navBarTextAttr
         navBar?.largeTitleTextAttributes = navBarTextAttr
     }

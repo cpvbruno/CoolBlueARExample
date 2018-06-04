@@ -14,22 +14,22 @@ class NetworkServices {
         let myUrl = URL(string: scriptUrl);
         var request = URLRequest(url:myUrl!);
         request.httpMethod = "GET"
+        let failResponse = NSDictionary(dictionary: ["failed": true])
         let task = URLSession.shared.dataTask(with: request) {
             data, response, error in
-            
             if error != nil
             {
-                print("error=\(String(describing: error))")
-                completion(NSDictionary(dictionary: ["failed": "1"]))
+                completion(failResponse)
                 return
             }
             do {
                 if let convertedJsonIntoDict = try JSONSerialization.jsonObject(with: data!, options: []) as? NSDictionary {
                     completion(convertedJsonIntoDict)
+                } else {
+                    completion(failResponse)
                 }
-            } catch let error as NSError {
-                print(error.localizedDescription)
-                completion(NSDictionary(dictionary: ["failed": "1"]))
+            } catch _ as NSError {
+                completion(failResponse)
             }
         }
         task.resume()

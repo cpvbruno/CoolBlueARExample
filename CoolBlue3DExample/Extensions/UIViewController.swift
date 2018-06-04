@@ -12,8 +12,15 @@ import UIKit
 extension UIViewController {
     
     func showError() {
-        let alert = UIAlertView(title: "Oops...", message: "Something went wront, please try again", delegate: nil, cancelButtonTitle: "Ok")
+        let alert = UIAlertView(title: localizedString(text: "errorHeader"),
+                                message: localizedString(text: "errorBody"),
+                                delegate: nil,
+                                cancelButtonTitle: localizedString(text: "errorButton"))
         alert.show()
+    }
+    
+    func localizedString(text: String) -> String {
+        return NSLocalizedString(text, comment: "")
     }
     
 }
