@@ -16,7 +16,8 @@ class ProductsViewModel: NSObject {
     
     func getProducts() {
         viewController.showLoader()
-        ProductsServices.getProducts(completion: { (success, products) in
+        let productServices = ProductsServices(networkServices: NetworkServices())
+        productServices.getProducts(completion: { (success, products) in
             if success, let products = products {
                 self.viewController.products = products
                 self.reloadList()

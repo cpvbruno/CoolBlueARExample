@@ -10,7 +10,13 @@ import Foundation
 
 class ProductsServices {
     
-    static func getProducts(completion: @escaping (_ success: Bool, [Product]?) -> Void) {
+    let networkServices: NetworkServices!
+    
+    init(networkServices: NetworkServices) {
+        self.networkServices = networkServices
+    }
+    
+    func getProducts(completion: @escaping (_ success: Bool, [Product]?) -> Void) {
         fetchProductsFromServer { (result) in
             if result["failed"] == nil,
                 let items = result["items"] as? [AnyObject] {
@@ -29,8 +35,8 @@ class ProductsServices {
         }
     }
     
-    static func fetchProductsFromServer(completion: @escaping (NSDictionary) -> Void) {
-        NetworkServices().get(url: ConfigurationServices.productUrl) { result in
+    func fetchProductsFromServer(completion: @escaping (NSDictionary) -> Void) {
+        networkServices.get(url: ConfigurationServices.productUrl) { result in
             completion(result)
         }
     }
